@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Регистрация</h2>
+<form method="post">
+    {% csrf_token %}
+    <p><input type="text" name="username" placeholder="Логин" required></p>
+    <p><input type="password" name="password" placeholder="Пароль (минимум 8 символов)" required></p>
+    <p><input type="text" name="fio" placeholder="ФИО" required></p>
+    <p><input type="text" name="telefon" placeholder="Телефон (8(XXX)XXX-XX-XX)" required></p>
+    <p><input type="email" name="email" placeholder="Email" required></p>
+    <button type="submit">Зарегать</button>
+</form>
+{% if error %}<p style="color: red;">{{ error }}</p>{% endif %}
+<p>Войди в акк <a class="button" href="{% url 'login' %}">Войти</a></p>
+{% endblock %}
