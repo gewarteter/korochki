@@ -21,7 +21,6 @@ body {
 input, select, textarea, button {
     padding: 8px;
     margin: 5px 0;
-    width: 100%;
     box-sizing: border-box;
     border: 1px solid #999;
     font-size: 14px;
@@ -31,6 +30,12 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    padding: 8px;
+    margin: 5px 0;
+    width: 91%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    font-size: 14px;
 }
 
 .button {
@@ -77,6 +82,6 @@ th { background: #007bff; color: white; }
     font-size: 16px;
 }
 
-.next { right: 0; }
-.prev { left: 0; }
+.next { right: -330px; }
+.prev { left: -326px; }
 
